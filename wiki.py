@@ -1,5 +1,6 @@
 import wikipedia
 
-input = raw_input("Question: ")
-
-print wikipedia.summary(input)
+while True:
+    input = raw_input("Question: ")
+    wikipedia.set_lang("fr")
+    print wikipedia.summary(input, sentences=2)
